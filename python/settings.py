@@ -1,0 +1,15 @@
+from pathlib import Path
+from dotenv import load_doenv
+import os
+
+
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path, verbose=True)
+
+
+BX_DATASCIENCE_AGS_PORTAL_LOGIN = os.getenv("BX_DATASCIENCE_AGS_PORTAL_LOGIN")
+BX_DATASCIENCE_AGS_PORTAL_PASSWORD = os.getenv("BX_DATASCIENCE_AGS_PORTAL_PASSWORD")
+
+BX_CONTENTMIGRATION_AGS_PORTAL_LOGIN = os.getenv("BX_CONTENTMIGRATION_AGS_PORTAL_LOGIN")
+BX_CONTENTMIGRATION_AGS_PORTAL_PASSWORD = os.getenv("BX_CONTENTMIGRATION_AGS_PORTAL_PASSWORD")
+
